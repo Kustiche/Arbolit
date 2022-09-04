@@ -4080,21 +4080,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
 .header__phone {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 17px;
   color: #000000;
   text-decoration: none;
@@ -4104,7 +4092,7 @@ body {
   content: "";
   position: absolute;
   width: 0;
-  border-top: 1px solid #000000;
+  border-top: 2px solid #000000;
   top: 101%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -4115,30 +4103,6 @@ body {
   transition: width 0.3s;
 }
 .header__phone:hover::after {
-  width: 100%;
-}
-.header__mail {
-  font-size: 14px;
-  line-height: 17px;
-  color: #5DAD04;
-  text-decoration: none;
-  position: relative;
-}
-.header__mail::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-top: 1px solid #5DAD04;
-  top: 101%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: width 0.3s;
-  -o-transition: width 0.3s;
-  transition: width 0.3s;
-}
-.header__mail:hover::after {
   width: 100%;
 }
 
@@ -4221,7 +4185,7 @@ body {
   bottom: 0;
   left: 0;
   position: absolute;
-  opacity: 0.7;
+  opacity: 0.5;
   z-index: -1;
 }
 .hero__wrap {
@@ -4292,8 +4256,8 @@ body {
   transition: all 0.4s;
 }
 .hero__button:hover {
-  outline: 2px solid #76B729;
-  background-color: transparent;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 @media (max-width: 768px) {
   .hero__button {
