@@ -1,5 +1,6 @@
 html
   box-sizing: border-box
+  scroll-behavior: smooth
 
 *,
 *::before,
@@ -16,7 +17,26 @@ body
   color: $black
   background-color: $black
 
+  &.lock
+    overflow: hidden
+
 .container
   margin: 0 auto
   max-width: 1170px
   padding: 0 15px
+
+.link-reset
+  text-decoration: none
+  color: inherit
+
+.list-reset
+  margin: 0
+  padding: 0
+  list-style: none
+
+.btn-reset
+  padding: 0
+  border: none
+  color: inherit
+  background-color: transparent
+  cursor: pointer
