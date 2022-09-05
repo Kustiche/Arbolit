@@ -1,0 +1,61 @@
+.contacts
+  padding: 70px 0
+  background-color: $white
+
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 70px
+    gap: 40px
+
+  &__title
+    margin-bottom: 70px
+
+  &__form
+    display: flex
+    flex-direction: column
+    max-width: 400px
+    margin: 0 auto
+
+  &__input
+    margin-bottom: 20px
+
+.info
+  width: 50%
+
+  &__item
+    margin-bottom: 20px
+    font-family: 'Inter', sans-serif
+    font-size: 18px
+    line-height: 24px
+    &:last-child
+      margin-bottom: 0
+
+  &__subject
+    margin: 0
+    margin-bottom: 5px
+    font-weight: 500
+    text-transform: uppercase
+    font-size: 20px
+    color: $atlantis
+
+  &__phone
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 0
+      border-top: 2px solid $black
+      top: 101%
+      left: 50%
+      transform: translateX(-50%)
+      transition: width .3s
+    &:hover
+      &::after
+        width: 100%
+
+.map
+  width: 50%
+  display: flex
+  align-items: center
