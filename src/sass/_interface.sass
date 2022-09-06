@@ -8,11 +8,14 @@
   margin: 0
   text-align: center
   text-transform: uppercase
-  font-family: 'Inter', sans-serif
+  font-family: 'Inter-Bold', sans-serif
   font-weight: 700
-  font-size: 30px
+  font-size: 36px
   line-height: 36px
   color: $black
+
+  &--white
+    color: $white
 
 .input
   padding: 15px 25px
@@ -40,3 +43,31 @@
     @media (max-width: 768px)
       font-size: 15px
       padding: 15px 30px
+
+  &__textarea
+    min-height: 100px
+    margin-bottom: 20px
+    padding: 15px 25px
+    border: 1px solid $black
+    border-radius: 7px
+    resize: none
+    font-size: 15px
+    outline: none
+
+.form-title
+  margin: 0
+  margin-bottom: 5px
+  text-align: center
+  text-transform: uppercase
+  font-family: 'Inter-Bold', sans-serif
+  font-weight: 700
+  font-size: 25px
+
+.form-descr
+  margin: 0
+  margin-bottom: 20px
+  text-align: center
+  text-transform: uppercase
+  font-family: 'Inter', sans-serif
+  font-weight: 500
+  font-size: 20px
