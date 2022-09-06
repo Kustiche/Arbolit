@@ -1,0 +1,46 @@
+.footer
+	padding: 40px 0
+	background-color: $black
+
+	&__logo
+		@media (max-width: 768px)
+			margin-bottom: 35px
+
+	&__wrap
+		margin-bottom: 50px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		@media (max-width: 768px)
+			flex-direction: column
+			align-items: center
+
+	&__menu
+		@media (max-width: 768px)
+			margin-bottom: 35px
+
+	&__links
+		display: flex
+		align-items: center
+
+	&__link
+		margin-right: 15px
+		&:last-child
+			margin: 0
+
+	&__ico
+		width: 45px
+		height: auto
+		transition: opacity .3s
+
+		&:hover
+			opacity: .7
+
+	&__inner
+		display: flex
+		justify-content: center
+
+	&__copyright
+		text-align: center
+		color: $white
+		opacity: .7

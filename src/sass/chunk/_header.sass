@@ -63,7 +63,7 @@
 
   &__link
     position: relative
-    color: $black
+    color: currentColor
     font-size: 19px
 
     &::after
@@ -91,6 +91,16 @@
         opacity: 1
         visibility: visible
 
+.menu__list
+
+  &--white
+    color: $white
+
+.menu__item
+
+  &--center
+    text-align: center
+
 @media (min-width: 768px)
 
   .menu__list
@@ -108,6 +118,9 @@
 
   .menu__item
     padding: 0
+
+    &--center
+      margin-right: 0
 
   .menu__link
     color: $white
