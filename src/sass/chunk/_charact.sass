@@ -1,0 +1,72 @@
+.charact
+  padding: 70px 0
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/charact/charact-bg.jpg")
+  background-position: center
+  background-size: cover
+
+  &__title
+    margin-bottom: 70px
+
+  &__wrap
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 50px 20px
+
+.charact-card
+  display: flex
+  align-items: center
+  justify-content: space-between
+  max-width: 500px
+
+  &__circle
+    margin-right: 30px
+    flex-shrink: 0
+    width: 150px
+    height: 150px
+    border: 3px solid $atlantis
+    border-radius: 50%
+    background-repeat: no-repeat
+    background-size: 80px
+    background-position: center
+
+    &--eco
+      background-image: url("../img/charact/eco-icon.svg")
+
+    &--fire
+      background-image: url("../img/charact/fire-icon.svg")
+
+    &--warm
+      background-image: url("../img/charact/warm-icon.svg")
+
+    &--light
+      background-image: url("../img/charact/light-icon.svg")
+
+    &--sound
+      background-image: url("../img/charact/sound-icon.svg")
+
+    &--lasting
+      background-image: url("../img/charact/lasting-icon.svg")
+
+    &--geometry
+      background-image: url("../img/charact/geometry-icon.svg")
+
+    &--durable
+      background-image: url("../img/charact/durable-icon.svg")
+
+  &__text
+    color: $white
+
+  &__title
+    margin: 0
+    margin-bottom: 20px
+    text-transform: uppercase
+    font-family: "Inter-Bold", sans-serif
+    font-weight: 700
+    font-size: 22px
+    line-height: 24px
+
+  &__descr
+    margin: 0
+    font-size: 14px
+    line-height: 24px
