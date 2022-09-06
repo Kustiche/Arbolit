@@ -11,33 +11,39 @@
 </head>
 
 <body>
-  <header class="header">
-  <div class="container">
-    <div class="header__wrap">
-      <a class="header__logo logo" href="#">
-        <img class="logo__image" src="img/header/logo.png" alt="Логотип">
-      </a>
-      <nav class="menu">
-        <ul class="menu__list">
+  <header class="header lock-padding">
+  <div class="header__container">
+    <a href="#" class="header__logo logo">
+      <img class="logo__img" src="img/header/logo.png" alt="Logo">
+    </a>
+    <div class="header__menu menu">
+      <button class="menu__burger burger btn-reset">
+        <span class="burger__line"></span>
+      </button>
+      <nav class="menu__body">
+        <ul class="menu__list list-reset">
           <li class="menu__item">
-            <a class="menu__link" href="#/">Главная</a>
+            <a class="menu__link link-reset" data-goto=".hero" href="#">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#/">Продукция</a>
+            <a class="menu__link link-reset" data-goto=".price" href="#">Продукция</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#/">Сравнение</a>
+            <a class="menu__link link-reset" data-goto=".comparison" href="#">Сравнение</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#/">Об арболите</a>
+            <a class="menu__link link-reset" data-goto=".about" href="#">Об арболите</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#/">Контакты</a>
+            <a class="menu__link link-reset" data-goto=".contacts" href="#">Контакты</a>
+          </li>
+          <li class="menu__item">
+            <a class="header__phone header__phone--mobile link-reset" href="tel:+79202925567">Позвонить нам</a>
           </li>
         </ul>
       </nav>
-      <a class="header__phone" href="tel:+79202925567">+7(920) 292-55-67</a>
     </div>
+    <a class="header__phone header__phone--desktop link-reset" href="tel:+79202925567">Позвонить нам</a>
   </div>
 </header>
   <main class="main">
@@ -72,7 +78,7 @@
     <section class="price">
   <div class="container">
     <div class="price__wrap">
-      <h2 class="price__title">Наша продукция</h2>
+      <h2 class="price__title title">Наша продукция</h2>
       <div class="price__card">
         <img class="price__image" src="img/price/block.png" alt="Блок">
         <h3 class="price__caption">Стеновой блок</h3>
@@ -83,12 +89,409 @@
     </div>
   </div>
 </section>
+    <section class="about">
+	<div class="container">
+		<h2 class="about__title title">
+			Об арболите
+		</h2>
+		<div class="about__content">
+			<img class="about__image" src="img/about/arbolit-block.png" alt="Блок арболита">
+			<div class="about__inner">
+				<p class="about__text">
+					Арболит&nbsp;&mdash; уникальный строительный материал, сочетающий в&nbsp;себе экологические свойства дерева
+					и&nbsp;прочность бетона. арболит обладает относительно небольшой массой, повышенной прочностью,
+					огнестойкостью,
+					биостойкостью бетона и&nbsp;низкой теплопроводностью. легко поддается любым механическим воздействиям
+					(сверлению,
+					рубке, распилке). благодаря своей пористой структуре, арболитовые блоки обеспечивают хорошую циркуляцию
+					воздуха
+					в&nbsp;помещении. стены из&nbsp;арболита хорошо поглошают звуковые волны.
+				</p>
+				<p class="about__text">
+					Благодаря отличным тепло- и&nbsp;звукоизолирующим свойствам, огнеустойчивости, экологичному составу легкости и
+					экономичности арболит (зарубежное название durisol уже в&nbsp;30-е годы прошлого века завоевывает огромную
+					популярность в&nbsp;сша, канадеи странах европы.&nbsp;в&nbsp;60-е годы арболит прошел сертификацию
+					и&nbsp;стандартизацию в&nbsp;ссср, тогда&nbsp;же были построены первые заводы по&nbsp;производству этого
+					материала.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+    <section class="charact">
+  <div class="container">
+    <h2 class="charact__title title title--white">
+      Характеристики арболита
+    </h2>
+
+    <div class="charact__wrap">
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--eco"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Экологичный
+          </h3>
+          <p class="charact-card__descr">
+            Благодаря своему составу (древесная щепа, портландцемент и&nbsp;добавка, используемая также при промышленной
+            очистке воды) арболит считается самым безопасным строительным материалом для здоровья человека.
+          </p>
+        </div>
+      </div>
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--fire"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Огнестойкий
+          </h3>
+          <p class="charact-card__descr">
+            Арболит относится к&nbsp;классу трудновоспламеняемых материалов, этот материал способен противодействовать
+            открытому огню более 1,5ч.
+          </p>
+        </div>
+      </div>
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--warm"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Тёплый
+          </h3>
+          <p class="charact-card__descr">
+            За&nbsp;счет своей структуры арболит является морозостойким материалом и&nbsp;отлично сохраняет тепло. Стена
+            из&nbsp;арболита шириной всего 30&nbsp;см по&nbsp;показателям теплопроводности соответствует кирпичной стене
+            толщиной в&nbsp;1&nbsp;метр.
+          </p>
+        </div>
+      </div>
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--light"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Лёгкий
+          </h3>
+          <p class="charact-card__descr">
+            1&nbsp;кубометр арболита весит в&nbsp;3&nbsp;раза меньше, чем такой&nbsp;же объем кирпича. Легкость арболита
+            позволяет заложить любой тип мелкозаглубленного фундамента, что значительно удешевляет строительство.
+          </p>
+        </div>
+      </div>
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--sound"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Звукоизолирующий
+          </h3>
+          <p class="charact-card__descr">
+            Благодаря пористой структуре звук гасится внутри арболитовых блоков. Коэффициент звукопоглощения
+            у&nbsp;арболита составляет 0,17-0,6 (в&nbsp;диапазоне 135-2000&nbsp;Гц), что значительно превосходит
+            показатели кирпича и&nbsp;дерева.
+          </p>
+        </div>
+      </div>
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--lasting"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Прочный
+          </h3>
+          <p class="charact-card__descr">
+            Показатель минимальной прочности на&nbsp;сжатие&nbsp;&mdash; 21&nbsp;кг/см2. Благодаря высокой прочности
+            на&nbsp;изгиб (0,7 до&nbsp;1,0&nbsp;Мпа) этот материал не&nbsp;трескается и&nbsp;не&nbsp;крошится под
+            нагрузкой, что выгодно отличает его от&nbsp;конкурентов&nbsp;&mdash; пено- и&nbsp;газобетона.
+          </p>
+        </div>
+      </div>
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--geometry"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Геометрически точный
+          </h3>
+          <p class="charact-card__descr">
+            Используя высокотехнологичное оборудование, мы&nbsp;выдерживаем арболит в&nbsp;специальных формах для
+            обеспечения точной геометрии блоков. Это обеспечивает легкость возведения стен и&nbsp;качество вашей будущей
+            постройки.
+          </p>
+        </div>
+      </div>
+
+      <div class="charact__card charact-card">
+        <div class="charact-card__circle charact-card__circle--durable"></div>
+        <div class="charact-card__text">
+          <h3 class="charact-card__title">
+            Долговечный
+          </h3>
+          <p class="charact-card__descr">
+            Благодаря своему натуральному составу арболит не&nbsp;подвержен гниению и&nbsp;образованию грибка
+            и&nbsp;плесени. Дома, построенные из&nbsp;арболита 50&nbsp;лет назад, эксплуатируются до&nbsp;сих пор.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section class="feedback">
+	<div class="container">
+		<h2 class="feedback__title title title--white">
+			Заполните форму и наш консультант свяжется&#160;с&#160;вами
+		</h2>
+		<p class="feedback__text">
+			Менеджер с радастью ответит на все ваши вопросы
+		</p>
+
+		<form class="feedback__form form" action="#" method="POST">
+			<input class="form__name input feedback__input" type="name" name="name" placeholder="Как к Вам обращаться">
+			<input class="form__phone input feedback__input" type="tel" name="phone" placeholder="Ваш контакнтый телефон">
+			<input class="form__submit feedback__input" type="submit" value="Отправить">
+		</form>
+	</div>
+</section>
+    <section class="comparison">
+  <div class="container">
+    <h2 class="comparison__title title">Сравнение с другими материалами</h2>
+
+    <div class="comparison__wrap">
+      <div class="comparison__card comparison-card">
+        <h3 class="comparison-card__title comparison-card__title--arbolit">Арболит</h3>
+        <ul class="comparison-card__list list-reset">
+          <li class="comparison-card__item">
+            Плотность материала КГ/МЗ 600
+          </li>
+          <li class="comparison-card__item">
+            Теплопроводнось, ВТ/(M*OC) 0,09
+          </li>
+          <li class="comparison-card__item">
+            Огнестойскость - не горит
+          </li>
+          <li class="comparison-card__item">
+            Звукопоглощение, при 1000 ГЦ - 0,019
+          </li>
+          <li class="comparison-card__item">
+            Усадка, ММ/ММ 0,4-0,5
+          </li>
+        </ul>
+      </div>
+
+      <div class="comparison__card comparison-card">
+        <h3 class="comparison-card__title comparison-card__title--foam-block">Пеноблок</h3>
+        <ul class="comparison-card__list list-reset">
+          <li class="comparison-card__item">
+            Плотность материала КГ/МЗ 600
+          </li>
+          <li class="comparison-card__item">
+            Теплопроводнось, ВТ/(M*OC) 0,15
+          </li>
+          <li class="comparison-card__item">
+            Огнестойскость - не горючий
+          </li>
+          <li class="comparison-card__item">
+            Звукопоглощение, при 1000 ГЦ - 0,2
+          </li>
+          <li class="comparison-card__item">
+            Усадка, ММ/ММ 1-3
+          </li>
+        </ul>
+      </div>
+
+      <div class="comparison__card comparison-card">
+        <h3 class="comparison-card__title comparison-card__title--wood">Дерево</h3>
+        <ul class="comparison-card__list list-reset">
+          <li class="comparison-card__item">
+            Плотность материала КГ/МЗ 500
+          </li>
+          <li class="comparison-card__item">
+            Теплопроводнось, ВТ/(M*OC) 0,14
+          </li>
+          <li class="comparison-card__item">
+            Огнестойскость - легко горит
+          </li>
+          <li class="comparison-card__item">
+            Звукопоглощение, при 1000 ГЦ - 0,1
+          </li>
+          <li class="comparison-card__item">
+            Усадка, ММ/ММ 30-100
+          </li>
+        </ul>
+      </div>
+
+      <div class="comparison__card comparison-card">
+        <h3 class="comparison-card__title comparison-card__title--gas-block">Газоблок</h3>
+        <ul class="comparison-card__list list-reset">
+          <li class="comparison-card__item">
+            Плотность материала КГ/МЗ 600
+          </li>
+          <li class="comparison-card__item">
+            Теплопроводнось, ВТ/(M*OC) 0,18
+          </li>
+          <li class="comparison-card__item">
+            Огнестойскость - не горючий
+          </li>
+          <li class="comparison-card__item">
+            Звукопоглощение, при 1000 ГЦ - 0,2
+          </li>
+          <li class="comparison-card__item">
+            Усадка, ММ/ММ 0,5
+          </li>
+        </ul>
+      </div>
+
+      <div class="comparison__card comparison-card">
+        <h3 class="comparison-card__title comparison-card__title--expanded-clay">Керамзитблок</h3>
+        <ul class="comparison-card__list list-reset">
+          <li class="comparison-card__item">
+            Плотность материала КГ/МЗ 900
+          </li>
+          <li class="comparison-card__item">
+            Теплопроводнось, ВТ/(M*OC) 0,50
+          </li>
+          <li class="comparison-card__item">
+            Огнестойскость - не горючий
+          </li>
+          <li class="comparison-card__item">
+            Звукопоглощение, при 1000 ГЦ - 0,7
+          </li>
+          <li class="comparison-card__item">
+            Усадка, ММ/ММ 0,3-0,5
+          </li>
+        </ul>
+      </div>
+
+      <div class="comparison__card comparison-card">
+        <h3 class="comparison-card__title comparison-card__title--brick">Кирпич</h3>
+        <ul class="comparison-card__list list-reset">
+          <li class="comparison-card__item">
+            Плотность материала КГ/МЗ 1550
+          </li>
+          <li class="comparison-card__item">
+            Теплопроводнось, ВТ/(M*OC) 0,60
+          </li>
+          <li class="comparison-card__item">
+            Огнестойскость - не горючий
+          </li>
+          <li class="comparison-card__item">
+            Звукопоглощение, при 1000 ГЦ - 0,05
+          </li>
+          <li class="comparison-card__item">
+            Усадка, ММ/ММ 0,03-0,1
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section class="stages">
+  <div class="container">
+    <h2 class="stages__title title title--white">Этапы работы</h2>
+
+    <div class="stages__wrap">
+      <img class="stages__img" src="img/stages/arbolit-block.png" alt="Арболитовые блоки">
+
+      <div class="stages__list">
+        <p class="stages__item">
+          Оставьте заявку на <br> БЕСПЛАТНЫЙ РАСЧЁТ
+        </p>
+        <a class="stages__link" href="#/">Оставить заявку</a>
+        <p class="stages__item">
+          Оплатите материал у нас в офисе <br> АДРЕС
+        </p>
+        <p class="stages__item">
+          Мы осуществим доставку и выгрузку материалов у вас на объекте
+        </p>
+        <p class="stages__item">
+          Получаете товар хорошего качества в сроки и по отличной цене
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="contacts">
+  <div class="container">
+    <h2 class="contacts__title title">Контакты</h2>
+    <div class="contacts__wrap">
+      <div class="contacts__info info">
+        <div class="info__item">
+          <h3 class="info__subject">
+            Адресс компании:
+          </h3>
+          <address class="info__address">
+            Нижегородская область, посёлок станции Тарасиха
+          </address>
+        </div>
+        <div class="info__item">
+          <h3 class="info__subject">
+            Телефон:
+          </h3>
+          <a href="tel:79202925567" class="info__phone link-reset">+7 (920) 292-55-67</a>
+        </div>
+      </div>
+      <div class="contacts__map map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A877e687df53156c3546abaecd463de7c9c3eceab114886ba21f96c4fe68e286b&amp;source=constructor"
+          width="800" height="250">
+        </iframe>
+      </div>
+    </div>
+    <h3 class="form-title">Остались вопросы?</h3>
+    <p class="form-descr">Заполните форму и мы перезвоним</p>
+    <form class="contacts__form" action="#" method="POST">
+      <input class="form__name input contacts__input" type="text" name="name" placeholder="Как к Вам обращаться">
+      <input class="form__phone input contacts__input" type="tel" name="phone" placeholder="Ваш контакнтый телефон">
+      <textarea class="form__textarea" name="textarea" id="textarea" placeholder="Сообщение..."></textarea>
+      <input class="form__submit contacts__input" type="submit" value="Отправить">
+    </form>
+  </div>
+</section>
   </main>
   <footer class="footer">
   <div class="container">
-
+    <div class="footer__wrap">
+      <a href="#" class="footer__logo logo">
+        <img class="logo__img" src="img/footer/logo.png" alt="Logo">
+      </a>
+      <ul class="menu__list menu__list--white footer__menu list-reset">
+        <li class="menu__item menu__item--center">
+          <a class="menu__link link-reset" data-goto=".hero" href="#">Главная</a>
+        </li>
+        <li class="menu__item menu__item--center">
+          <a class="menu__link link-reset" data-goto=".price" href="#">Продукция</a>
+        </li>
+        <li class="menu__item menu__item--center">
+          <a class="menu__link link-reset" data-goto=".comparison" href="#">Сравнение</a>
+        </li>
+        <li class="menu__item menu__item--center">
+          <a class="menu__link link-reset" data-goto=".about" href="#">Об арболите</a>
+        </li>
+        <li class="menu__item menu__item--center">
+          <a class="menu__link link-reset" data-goto=".contacts" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="footer__links">
+        <a class="footer__link link-reset" target="_blank" href="https://wa.me/79776302177">
+          <img src="img/footer/whatsapp-ico.svg" alt="Ватсап" class="footer__ico">
+        </a>
+        <a class="footer__link link-reset" target="_blank" href="viber://chat?number=+79776302177">
+          <img src="img/footer/viber-ico.svg" alt="Вайбер" class="footer__ico">
+        </a>
+      </div>
+    </div>
+    <div class="footer__inner">
+      <span class="footer__copyright">
+        &#169; 2022. Все права защищены
+      </span>
+    </div>
   </div>
 </footer>
+
+  <script src="js/libs/inputmask.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
