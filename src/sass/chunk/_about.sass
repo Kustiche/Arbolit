@@ -1,0 +1,42 @@
+.about
+	padding: 70px 0
+	background-color: $white
+
+	&__title
+		margin-bottom: 70px
+
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media (max-width: 992px)
+			flex-direction: column-reverse
+
+	&__image
+		margin-right: 50px
+		max-width: 375px
+		height: auto
+		@media (max-width: 1200px)
+			max-width: 320px
+		@media (max-width: 992px)
+			margin-right: 0
+			max-width: 290px
+		@media (max-width: 576px)
+			max-width: 270px
+
+	&__inner
+		display: flex
+		flex-direction: column
+		@media (max-width: 992px)
+			margin-bottom: 25px
+
+	&__text
+		margin: 0
+		margin-bottom: 40px
+		max-width: 650px
+		text-transform: uppercase
+		&:last-child
+			margin-bottom: 0
+		@media (max-width: 992px)
+			font-size: 15px
+			margin-bottom: 30px

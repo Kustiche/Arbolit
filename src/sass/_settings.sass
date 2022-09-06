@@ -1,5 +1,6 @@
 html
   box-sizing: border-box
+  scroll-behavior: smooth
 
 *,
 *::before,
@@ -15,6 +16,9 @@ body
   line-height: 24px
   color: $black
   background-color: $black
+
+  &.lock
+    overflow: hidden
 
 .container
   margin: 0 auto
