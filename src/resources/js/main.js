@@ -40,11 +40,11 @@ if (menuLinks.length > 0) {
   }
 }
 
-// inputMask
-let inputs = document.querySelectorAll('input[type="tel"]');
-let im = new Inputmask("+7 (999) 999-99-99");
-im.mask(inputs);
 
+
+
+
+// Modal
 const modalLinks = document.querySelectorAll(".modal-link");
 const body = document.querySelector("body");
 const lockPadding = document.querySelectorAll(".lock-padding");
@@ -173,13 +173,15 @@ document.addEventListener("keydown", function (e) {
   }
 })();
 
+
+
 // Валидация
 new window.JustValidate(".form", {
   rules: {
     tel: {
       required: true,
       function: () => {
-        const phone = telSelector.inputmask.unmaskedvalue();
+        const phone = feedbackTelSelector.inputmask.unmaskedvalue();
         return Number(phone) && phone.length === 10;
       },
     },
@@ -216,12 +218,33 @@ new window.JustValidate(".form", {
   },
 });
 
+
+
+
+// inputMask
+const feedbackForm = document.querySelector('.feedback__form');
+const contactsForm = document.querySelector('.contacts__form');
+const modalForm = document.querySelector('.modal__form');
+
+const feedbackTelSelector = feedbackForm.querySelector('input[type="tel"]');
+const contactsTelSelector = contactsForm.querySelector('input[type="tel"]');
+const modalTelSelector = modalForm.querySelector('input[type="tel"]');
+
+const inputMask = new Inputmask('+7 (999) 999-99-99');
+
+inputMask.mask(feedbackTelSelector);
+inputMask.mask(contactsTelSelector);
+inputMask.mask(modalTelSelector);
+
+
+
+
 new window.JustValidate(".contacts__form", {
   rules: {
     tel: {
       required: true,
       function: () => {
-        const phone = telSelector.inputmask.unmaskedvalue();
+        const phone = contactsTelSelector.inputmask.unmaskedvalue();
         return Number(phone) && phone.length === 10;
       },
     },
@@ -263,7 +286,7 @@ new window.JustValidate(".modal__form", {
     tel: {
       required: true,
       function: () => {
-        const phone = telSelector.inputmask.unmaskedvalue();
+        const phone = modalTelSelector.inputmask.unmaskedvalue();
         return Number(phone) && phone.length === 10;
       },
     },
