@@ -8,9 +8,15 @@
 		</p>
 
 		<form class="feedback__form form" action="#" method="POST">
-			<input class="form__name input feedback__input" type="name" name="name" placeholder="Как к Вам обращаться">
-			<input class="form__phone input feedback__input" type="tel" name="phone" placeholder="Ваш контакнтый телефон">
-			<input class="form__submit feedback__input" type="submit" value="Отправить">
+			<label class="form__label feedback__label">
+				<input class="form__input feedback__input" type="name" name="name" data-validate-field="name"
+					placeholder="Как к Вам обращаться">
+			</label>
+			<label class="form__label feedback__label">
+				<input class="form__input feedback__input" type="tel" name="phone" data-validate-field="tel"
+					placeholder="Ваш контакнтый телефон">
+			</label>
+			<input class="form__submit feedback__submit" type="submit" value="Отправить">
 		</form>
 	</div>
 </section>
