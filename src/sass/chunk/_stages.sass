@@ -13,7 +13,11 @@
     margin-bottom: 70px
 
   &__img
-    width: 450px
+    max-width: 450px
+    @media (max-width: 992px)
+      max-width: 350px
+    @media (max-width: 850px)
+      display: none
 
   &__list
     max-width: 410px
@@ -42,6 +46,10 @@
       margin-bottom: 10px
     &:last-child
       margin-bottom: 0
+    @media (max-width: 992px)
+      margin-bottom: 20px
+      font-size: 18px
+      line-height: 22px
 
   &__link
     display: block
