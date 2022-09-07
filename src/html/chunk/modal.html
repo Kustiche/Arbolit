@@ -1,0 +1,26 @@
+<div id="modal" class="modal">
+  <div class="modal__body">
+    <div class="modal__content">
+      <a href="#header" class="modal__close close-modal">X</a>
+      <div class="modal__title">Сделайте предварительный заказ или закажите расчёт</div>
+      <form class="modal__form form" action="mail.php" method="POST">
+        <label class="form__label modal__label">
+          <input class="form__input modal__input" type="text" name="Имя" data-validate-field="name"
+            placeholder="Как к Вам обращаться">
+        </label>
+        <label class="form__label modal__label">
+          <input class="form__input modal__input" type="tel" name="Телефон" data-validate-field="tel"
+            placeholder="Ваш контакнтый телефон">
+        </label>
+        <label class="form__label modal__label">
+          <input class="form__input modal__input" type="email" name="Почта" data-validate-field="email"
+            placeholder="Ваш E-mail">
+        </label>
+        <label class="modal__label">
+          <textarea class="form__textarea" name="Сообщение" id="textarea" placeholder="Сообщение..."></textarea>
+        </label>
+        <input class="form__submit modal__input" type="submit" value="Отправить">
+      </form>
+    </div>
+  </div>
+</div>

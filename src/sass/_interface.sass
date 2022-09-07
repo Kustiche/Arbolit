@@ -22,14 +22,22 @@
   &--white
     color: $white
 
-.input
-  padding: 15px 25px
-  border: 1px solid $black
-  border-radius: 7px
-  font-size: 15px
-  outline: none
-
 .form
+  display: flex
+
+  &__label
+    display: flex
+    flex-direction: column-reverse
+
+  &__input
+    width: 100%
+    padding: 15px 25px
+    border: 1px solid $black
+    border-radius: 7px
+    font-size: 15px
+    outline: none
+    @media (max-width: 768px)
+      text-align: center
 
   &__submit
     padding: 15px 40px
@@ -50,14 +58,16 @@
       padding: 15px 30px
 
   &__textarea
+    width: 100%
     min-height: 100px
-    margin-bottom: 20px
     padding: 15px 25px
     border: 1px solid $black
     border-radius: 7px
     resize: none
     font-size: 15px
     outline: none
+    @media (max-width: 768px)
+      text-align: center
 
 .form-title
   margin: 0
@@ -67,6 +77,9 @@
   font-family: 'Inter-Bold', sans-serif
   font-weight: 700
   font-size: 25px
+  @media (max-width: 768px)
+    font-size: 20px
+    line-height: 18px
 
 .form-descr
   margin: 0
@@ -76,3 +89,16 @@
   font-family: 'Inter', sans-serif
   font-weight: 500
   font-size: 20px
+  @media (max-width: 768px)
+    font-size: 16px
+    line-height: 18px
+
+.js-validate-error-label
+  padding-left: 10px
+  padding-bottom: 5px
+  font-size: 16px
+
+.js-validate-error-field
+  box-shadow: 0px 0px 10px 3px rgba(255, 15, 15, 0.2)
+
+  
